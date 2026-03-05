@@ -1,0 +1,100 @@
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+    width: 80%;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    row-gap: 10px;
+    width: 100%;
+}
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.login-form button {
+    font-size: 20px;
+}
+.login-form button:hover {
+    background-color: #45a049;
+    color: white;
+    transition: 0.3s;
+}
+.card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);;
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: white !important;
+    background-color: rgb(10, 153, 10) !important;
+    border-color: transparent !important;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+    font-size: var(--bs-pagination-font-size);
+    color: rgb(10, 153, 10) !important;
+    text-decoration: none;
+    background-color: var(--bs-pagination-bg);
+    border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.user-image{
+    width: 110px !important;
+    height: 110px !important;
+}
+.card-width{
+    width: 250px !important;
+}

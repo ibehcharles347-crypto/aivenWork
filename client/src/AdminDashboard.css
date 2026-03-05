@@ -1,0 +1,15 @@
+.admin-dashboard {
+  display: flex;
+  min-height: 94vh;
+  width: 100%;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+  height: 94vh;
+  overflow: scroll;
+}
+.admin-dashboard .sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
