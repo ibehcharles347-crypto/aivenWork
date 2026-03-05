@@ -13,8 +13,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
-  },
+  "start": "node index.js",
+  "test": "jest"
+},
   "dependencies": {
     "axios": "^1.13.5",
     "cors": "^2.8.6",
