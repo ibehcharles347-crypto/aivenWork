@@ -128,7 +128,6 @@ const UsersTable = ({ users, refresh }) => {
                                         )}
                                     </button>
                                 )}
-
                                 <button
                                     onClick={() => handleDelete(user.id)}
                                     className="btn btn-outline-danger btn-sm"
