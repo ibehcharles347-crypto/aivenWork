@@ -26,6 +26,7 @@ function App() {
 
         <div className="app-routes">
           <Routes>
+            <Route path="/" element={<AdminDashboardLayout />}></Route>
             <Route path="/admin/*" element={<AdminDashboardLayout />}>
               <Route path="login" element={<LoginForm onUserAdded={fetchUsers} />} />
               <Route path="users" element={<UsersTable users={users} refresh={fetchUsers} />} />
