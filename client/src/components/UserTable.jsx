@@ -4,6 +4,7 @@ import "./loginform.css";
 import Spinner from 'react-bootstrap/Spinner';
 import Pagination from "react-bootstrap/Pagination";
 
+
 const UsersTable = ({ users, refresh }) => {
     const usersPerPage = 5;
     const [currentPage, setCurrentPage] = useState(1);
@@ -68,7 +69,7 @@ const UsersTable = ({ users, refresh }) => {
                     >
                         <div className="card shadow border-0 user-card d-flex align-items-center gap-3 p-4">
                             <img
-                                src={`http://localhost:5000/uploads/${user.image}`}
+                                src={`${API}/uploads/${user.image}`}
                                 alt={user.name}
                                 className="rounded-circle border user-image"
                                 style={{ width: "60px", height: "60px", objectFit: "cover" }}
