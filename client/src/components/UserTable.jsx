@@ -69,7 +69,7 @@ const UsersTable = ({ users, refresh }) => {
                     >
                         <div className="card shadow border-0 user-card d-flex align-items-center gap-3 p-4">
                             <img
-                                src={`${API}/uploads/${user.image}`}
+                                src={`http://localhost:5000/uploads/${user.image}`}
                                 alt={user.name}
                                 className="rounded-circle border user-image"
                                 style={{ width: "60px", height: "60px", objectFit: "cover" }}

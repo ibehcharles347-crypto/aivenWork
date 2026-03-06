@@ -3,8 +3,7 @@ p {
     margin-bottom: 0rem !important;
 }
 .help-link {
-    color: green !important;
-    transition: color 0.3s ease;
+    display: none !important;
 }
 .nav-link {
     display: block;

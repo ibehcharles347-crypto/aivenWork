@@ -26,12 +26,13 @@ const Header = () => {
                         <p className="text-dark">Welcome, Charles</p>
                         <Nav.Link
                             as={NavLink}
-                            to="/"
+                            to="/admin/users"
                             className={({ isActive }) =>
-                                isActive ? "text-warning fw-semibold" : "help-link"
+                                isActive ? "help-link" : "text-warning fw-semibold"
                             }
+                            
                         >
-                            Help?
+                            Dashboard
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
