@@ -42,11 +42,12 @@ export const Login = async (req, res) => {
         if (!isPasswordValid) {
             return res.status(400).json({ error: "Invalid email or password" });
         }
-        const token = jwt.sign({userId: user.id, userEmail: user.userEmail}, process.env.JWT_SECRET, {expiresIn: "2m"});
+        const token = jwt.sign({userId: user.id, userEmail: user.userEmail}, process.env.JWT_SECRET, {expiresIn: "1h"});
         res.cookie("token", token, { 
             httpOnly: true, 
             secure: true, 
-            sameSite: "None"
+            sameSite: "None",
+            path: "/"
         });
         res.json({ message: "Login successful", token });
     }
