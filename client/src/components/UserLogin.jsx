@@ -24,7 +24,9 @@ function UserLogin() {
         e.preventDefault();
         try {
             const response = await API.post("/api/login", formData);
-            console.log("Login successful:", response.data);
+
+            localStorage.setItem("token", response.data.token);
+
             await fetchUser();
             navigate("/dashboard");
         } catch (error) {

@@ -15,7 +15,7 @@ const PORT = 5000;
 const app = express()
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://aiven-work.vercel.app", 
+    origin: ["http://localhost:5173/","http://localhost:5174/","https://aiven-work.vercel.app"], 
     credentials: true,
 }))
 app.use(express.json());
